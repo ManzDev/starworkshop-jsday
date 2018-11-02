@@ -1,0 +1,31 @@
+{
+  "editor.fontFamily": "'Envy Code R', Consolas, 'Courier New', monospace",
+  "editor.formatOnSave": false,
+  "files.trimTrailingWhitespace": true,
+
+  "postcssSorting.config": {
+    "order": [
+      "custom-properties",
+      "declarations",
+      "at-rules",
+      "rules"
+    ],
+    "properties-order": [
+      "display",
+      "width",
+      "height",
+      "max-width",
+      "max-height",
+      "min-width",
+      "min-height",
+      "margin",
+      "padding",
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left"
+      ]
+    ]
+  }
+}

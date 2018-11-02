@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="sunglasses" viewBox="0 0 178 27" version="1">
+  <path d="M117 25v-3h6v-6h5v-5h6V6h33v5h11V6h-11V0H0v11h5v5h6v6h39v-6h6v-5h11v6h5v5h6v5h39z"/>
+  <g fill="#fff">
+    <path d="M29 11h5v5h-5zM35 6h5v5h-5zM40 11h5v5h-5zM45 6h5v5h-5z"/>
+    <path d="M101 11h5v5h-5zM107 6h5v5h-5zM112 11h5v5h-5zM117 6h5v5h-5zM96 16h5v5h-5zM107 16h5v5h-5z"/>
+  </g>
+</svg>
