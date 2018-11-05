@@ -13,7 +13,7 @@ rm -rf .git
 npm install
 ```
 
-...or simply *fork*, clone and `npm install`!
+...or simply **fork**, clone and `npm install`!
 
 ## Developing
 
@@ -21,7 +21,7 @@ npm install
 |---------|-------------|
 | `npm run dev`    | Delete `dist` folder and open a development web. |
 | `npm run build`  | Delete `build` folder and create production web. |
-| `npm run deploy` | Deploy `build` folder on `gh-pages` branch (site). |
+| `npm run deploy` | Deploy `build` folder on `gh-pages` branch (site). *Don't forget commit and push `build` folder!* |
 
 ## Help!
 
