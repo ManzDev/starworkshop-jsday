@@ -13,6 +13,8 @@ rm -rf .git
 npm install
 ```
 
+...or simply *fork*, clone and `npm install`!
+
 ## Developing
 
 | Command | Description |
