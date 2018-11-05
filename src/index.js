@@ -45,7 +45,7 @@ tippy.setDefaults({
 a.forEach((a,i) => {
 
   tippy(a, {
-    content: retos[i].title + `<img src="/reto${i+1}.png">` + snarkdown(retos[i].tip)
+    content: retos[i].title + `<img src="./reto${i+1}.png">` + snarkdown(retos[i].tip)
   });
 
 });
