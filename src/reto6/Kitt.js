@@ -1,4 +1,4 @@
-import { Howl } from 'Howler';
+import { Howl } from 'howler';
 import knightSong from './knight.mp3';
 export default class Kitt {
 
