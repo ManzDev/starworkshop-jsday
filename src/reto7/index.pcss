@@ -1,2 +1,156 @@
 @import "../global.pcss";
 
+@font-face {
+  font-family: 'Star Jedi Hollow', Impact, sans-serif;
+  src:
+    local('Star Jedi Hollow'),
+    url(starjhol.woff2) format('woff2'),
+    url(starjhol.woff) format('woff'),
+    url(starjhol.ttf) format('truetype');
+}
+
+#galaxy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.vhs {
+  width: 700px;
+  height: 340px;
+  background: #222;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+
+  position: relative;
+  z-index: 1;
+
+  & .top {
+    border: 5px solid #111;
+    border-top: 25px solid #111;
+    border-bottom: 0;
+    height: 40px;
+    position: relative;
+
+    &::after,
+    &::before {
+      font-family: Cabin, sans-serif;
+      color: #555;
+      position: absolute;
+    }
+
+    &::before {
+      content: "VHS";
+      border: 1px solid #333;
+      font-size: 10px;
+      top: -20px;
+      right: 10px;
+    }
+
+    &::after {
+      content: "Insert this side into recorder 🠝 Do not touch the tape inside";
+      font-size: 12px;
+      position: relative;
+      top: -22px;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  & .center {
+    width: 600px;
+    height: 150px;
+    margin: 20px auto;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 50px 75px;
+    border-bottom-left-radius: 50px 75px;
+    border-top-right-radius: 50px 75px;
+    border-bottom-right-radius: 50px 75px;
+  }
+
+  & .tape {
+    width: 150px;
+    height: 150px;
+    background: #666;
+    overflow: hidden;
+
+    &.a {
+      border-top-left-radius: 50px 75px;
+      border-bottom-left-radius: 50px 75px;
+    }
+
+    &.b {
+      border-top-right-radius: 50px 75px;
+      border-bottom-right-radius: 50px 75px;
+    }
+  }
+
+  & .circle {
+    width: 90px;
+    height: 90px;
+    border: 10px solid #666;
+    border-radius: 50%;
+    background: #aaa;
+    z-index: 5;
+    position: relative;
+  }
+
+  & .film {
+    width: 250px;
+    height: 250px;
+    background: #222;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+    animation: playing 2.5s linear infinite;
+    will-change: transform;
+
+    &::after,
+    &::before {
+      content: " ";
+      width: 200px;
+      height: 25px;
+      background: #111;
+      border: 4px solid #252525;
+      position: absolute;
+      z-index: 0;
+      top: 108.5px;
+      left: 21px;
+    }
+
+    &::after {
+      transform-origin: 50% 50%;
+      transform: rotateZ(90deg);
+    }
+  }
+  & .tape.a .film { left: 50px; }
+  & .tape.b .film { left: -150px; }
+
+  & .label {
+    width: 245px;
+    height: 140px;
+    border-radius: 15px;
+    background: #000;
+    font-family: 'Star Jedi Hollow', Impact, sans-serif;
+    font-size: 52px;
+    text-align: center;
+    color: #e5c824;
+    line-height: 120%;
+    letter-spacing: -3px;
+  }
+}
+
+@keyframes playing {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}

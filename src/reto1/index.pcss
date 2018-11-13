@@ -1,32 +1,54 @@
 @import "../global.pcss";
 
 .card {
+  width: 400px;
+  padding: 25px;
+  background: linear-gradient(165deg, #fff, #aaa);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 1rem;
 
   & h2 {
-
+    margin: 16px;
+    font-family: 'Limelight', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
   }
 
   & .image {
-
+    max-width: 100%;
   }
 
   & p {
-
+    margin-bottom: 50px;
   }
 
   & button {
+    padding: 6px 18px;
+    font-family: 'Scope One', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: 0;
+    background: linear-gradient(2deg, var(--button-color-top), var(--button-color-bottom));
+    border: 1px solid var(--button-color-bottom);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
 
     &.ok {
+      --button-color-top: #9088ec;
+      --button-color-bottom: #665ce6;
 
       &:hover {
-
+        --button-color-top: color-mod(#9088ec lightness(30%));
       }
     }
 
     &.cancel {
+      --button-color-top: #e14949;
+      --button-color-bottom: #830000;
 
       &:hover {
-
+        --button-color-top: color-mod(#e14949 lightness(30%));
       }
     }
   }

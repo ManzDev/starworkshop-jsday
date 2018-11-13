@@ -27,10 +27,10 @@ export default class Galaxy {
     this.stars = [];
     for (let i=0; i < this.MAX_STARS; i++) {
       this.stars.push({
-        x: 0, // Change this!
-        y: 0, // Change this!
-        speed: 1, // Change this!
-        color: 1, // Change this!
+        x: ~~(Math.random() * this.canvas.width),
+        y: ~~(Math.random() * this.canvas.height),
+        speed: ~~(1 + Math.random() * this.MAX_SPEED),
+        color: ~~(Math.random() * this.COLORS.length),
       });
     }
   }

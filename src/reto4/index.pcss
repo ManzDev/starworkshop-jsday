@@ -1,2 +1,85 @@
 @import "../global.pcss";
 
+@font-face {
+  font-family: 'Neutra Text';
+  src:
+    local('Neutra Text'),
+    url('neutra.woff2') format('woff2'),
+    url('neutra.woff') format('woff'),
+    url('neutra.ttf') format('truetype');
+}
+
+.container {
+  flex-direction: column;
+}
+
+.js-guy {
+  position: relative;
+  z-index: 6;
+  cursor: pointer;
+}
+
+.animation {
+  animation: dance 0.6s ease-out infinite alternate;
+}
+
+.sunglasses {
+  width: 375px;
+  height: 55px;
+  background: url(sunglasses.svg) no-repeat;
+  background-size: cover;
+
+  position: relative;
+  z-index: 5;
+  top: 100px;
+  left: -15px;
+}
+
+.js-body {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: #f0db4f;
+  font-family: 'Neutra Text', sans-serif;
+  font-size: 172px;
+  color: #323330;
+
+  position: relative;
+  z-index: 3;
+}
+
+.off {
+  opacity: 0;
+}
+
+.legs {
+  display: flex;
+
+  & div {
+    width: 145px;
+    height: 335px;
+    background: url(leg.min.svg) no-repeat;
+    transform: scale(0.75) translateY(-125px);
+  }
+
+  & .left {
+    transform: scale(-0.75, 0.75) translateY(-125px);
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: translate(15px, 40px) skew(2deg);
+  }
+
+  50% {
+    transform: translate(0, 0) skew(0);
+  }
+
+  100% {
+    transform: translate(-15px, 40px) skew(-2deg);
+  }
+}
