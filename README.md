@@ -25,11 +25,22 @@ npm install
 
 ## Help!
 
-URL Slides: *Coming Soon*
+URL Slides: [https://speakerdeck.com/manz/star-workshop-css-jsday-canarias-2018](https://speakerdeck.com/manz/star-workshop-css-jsday-canarias-2018)
+
+## Solutions
+
+- [Reto #1: CSS Card](https://manzdev.github.io/starworkshop-jsday/reto1/index.html)
+- [Reto #2: Penguin eyes](https://manzdev.github.io/starworkshop-jsday/reto2/index.html)
+- [Reto #3: Three Card](https://manzdev.github.io/starworkshop-jsday/reto3/index.html)
+- [Reto #4: JS Guy](https://manzdev.github.io/starworkshop-jsday/reto4/index.html)
+- [Reto #5: Pink Floyd](https://manzdev.github.io/starworkshop-jsday/reto5/index.html)
+- [Reto #6: Knight Rider (KITT)](https://manzdev.github.io/starworkshop-jsday/reto6/index.html)
+- [Reto #7: VHS Star Wars](https://manzdev.github.io/starworkshop-jsday/reto7/index.html)
+- [Reto #8: Super Mario Bros](https://manzdev.github.io/starworkshop-jsday/reto8/index.html)
 
 ## Collaborations & great demos
 
-*Coming Soon*
+- [Rosana & DanielRamos](https://twitter.com/Totemika/status/1062044923485216769)
 
 ## Requisites
 
